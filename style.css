@@ -1,0 +1,59 @@
+body {
+    text-align: center;
+}
+
+.navbar {
+    background: #3474e6;
+    color: #fff;
+    height: 60px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.navbar .logo {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: lightblue;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* A height is needed here so the navbar ul can be centered */
+    height: 100%;
+
+.info img {
+    width: 100px;
+    height: 100px;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    color: #1f2937;
+}
+
+.container {
+    display: flex;
+}
+
+.ca-container {
+    flex: 1;
+    background-color: #0a51cc;
+    width: 400px;
+    height: 200px;
+}
