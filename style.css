@@ -1,9 +1,11 @@
-body {
-    text-align: center;
-}
 
+body {
+    margin: 0;
+    padding: 0;
+}
+/* Navbar */
 .navbar {
-    background: #1f2937;
+    background-color: #1f2937;
     color: #fff;
 }
 
@@ -14,6 +16,7 @@ ul {
 .navbar .logo {
     font-size: x-large;
     font-weight: bold;
+    padding: 20px;
 }
 
 .navbar a {
@@ -21,6 +24,7 @@ ul {
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
+    padding: 15px;
 }
 
 .navbar a:hover {
@@ -31,82 +35,149 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* A height is needed here so the navbar ul can be centered */
-    height: 100%;
 }
 
 .navbar ul {
     display: flex;
 }
 
-.navbar ul li {
-    margin-left: 20px;
-}
+/* Header - Hero */
 
 .header {
     background-color: #1f2937;
-    color: #fff;
 }
 
-.header h1 {
-    font-size: 3rem;
+.hero {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
     font-weight: bold;
-    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #E5E7EB;
 }
 
 .hero img {
-    max-width: 300px;
+    padding: 20px;
 }
 
-.header .hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.hero button {
+    display: block;
+    text-align: center;
+    width: 110px;
+    border: none;
+    background-color: #3882f6;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto', arial;
+    font-weight: bold;
 }
 
-.info {
-    max-width: 200px;
-}
+/* Content */
 
-.info img {
+.container img {
     width: 100px;
     height: 100px;
-}
-
-.title {
+  }
+  
+  .title {
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 32px;
+    text-align: center;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      gap: 52px;
+  }
+  
+  .info {
+    max-width: 200px;
+  }
+
+  /* quote */
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E7EB;
+    padding: 0 200px;
+  }
+
+  .quote p {
+    font-size: 36px;
     color: #1f2937;
-}
+    font-style: italic;
+    font-weight: lighter;
+    font-family: 'Roboto', arial;
+  }
 
-.container {
-    display: flex;
-}
+  .quote b {
+    padding-bottom: 20px;
+    padding-right: 10px;
+    font-family: 'Roboto', arial;
+    text-align: right;
+  }
 
-.quote {
-    background-color: #e5e7eb;
-    height: 200px;
-    width: auto;
-}
+  /* Sign up */
 
-.call-to-action {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 600px;
-}
-
-.ca-container {
-    flex: 1;
+.sign-up {
     background-color: #3882f6;
-    width: 300px;
-    height: 200px;
-    border-radius: 25px;
+    margin: 50px 200px;
+    padding: 10px 80px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border-color: none;
 }
 
-.footer {
+.sign-item {
+    flex-wrap: 1;
+}
+
+.signs-text {
+    text-align: left;
+}
+
+.signs-text p {
+    color: #fff;
+    opacity: 0.7;
+    margin: 5px 30px 30px 50px;
+}
+
+h3 {
+    color: #fff;
+    font-family: 'Roboto', arial;
+    padding: 0;
+    margin: 30px 0px 0px 50px;
+}
+
+.signs-button button {
+    color: #fff;
+    font-family: 'Roboto', arial;
+    border-color: #fff;
+    border-radius: 8px;
+    background-color: #3882f6;
+    padding: 5px 25px;
+    font-size: 15px;
+}
+
+  /* footer */
+
+  .footer {
     background-color: #1f2937;
     color: #fff;
     font-family: 'Roboto', arial;
+    text-align: center;
+    min-height: auto;
 }
